@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="#E8E3E3"
+    android:layout_margin="10dp"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="5dp">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/book"
+            android:padding="5dp"
+            android:layout_height="40dp"/>
+
+        <LinearLayout
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+            <TextView
+                android:textColor="#0C0C0C"
+                android:layout_marginTop="1dp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/layouttitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Title"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:layout_marginTop="1dp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/layoutdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Date"
+                android:textColor="#E91E63"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:layout_marginTop="1dp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/layoutmessage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Message"
+                android:maxLines="1"
+                android:textColor="#0E0E0E"
+                android:inputType="textMultiLine"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

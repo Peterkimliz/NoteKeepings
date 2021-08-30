@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "254170057010",
+    "project_id": "notesaving-fc1f2",
+    "storage_bucket": "notesaving-fc1f2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:254170057010:android:684845259ccb9f9b2faf2b",
+        "android_client_info": {
+          "package_name": "com.example.notesaving"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "254170057010-fa0et1hm0uafhf255ukqmdtnv7vmudgb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBBG39eLb4FcNZmXdbJRBDzAouy4yIy3Dc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "254170057010-fa0et1hm0uafhf255ukqmdtnv7vmudgb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

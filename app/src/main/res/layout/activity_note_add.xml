@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NoteAdd">
+
+    <include
+        android:id="@+id/noteAdd"
+        layout="@layout/toolbar"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/noteAddImage"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/noteAdd"
+        android:layout_width="120dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/profile"
+        android:layout_height="120dp"/>
+
+    <EditText
+        android:id="@+id/noteTitle"
+        android:hint="Title"
+        android:layout_marginTop="10dp"
+        android:inputType="text"
+        android:layout_width="match_parent"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/noteAddImage"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/noteWrite"
+        android:hint="Type your note"
+        android:inputType="textMultiLine"
+        android:layout_width="match_parent"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/noteTitle"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:id="@+id/noteSave"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/noteWrite"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Save"
+        android:textAllCaps="false"
+        android:textColor="@android:color/background_light"
+        android:background="@drawable/buttons"
+        />
+
+</RelativeLayout>
