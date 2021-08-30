@@ -13,7 +13,8 @@
         android:orientation="horizontal"
         android:layout_margin="5dp">
 
-        <ImageView
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/noteImageData"
             android:layout_width="40dp"
             android:layout_marginTop="20dp"
             android:src="@drawable/book"

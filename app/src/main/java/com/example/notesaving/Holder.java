@@ -6,8 +6,10 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-public class Holder extends RecyclerView.ViewHolder {
+import de.hdodenhof.circleimageview.CircleImageView;
 
+public class Holder extends RecyclerView.ViewHolder {
+    public CircleImageView circleImageView;
     public TextView textViewDate, textViewMessage,textViewTitle;
 
 
@@ -16,5 +18,6 @@ public class Holder extends RecyclerView.ViewHolder {
         textViewDate=itemView.findViewById(R.id.layoutdate);
         textViewMessage=itemView.findViewById(R.id.layoutmessage);
        textViewTitle=itemView.findViewById(R.id.layouttitle);
+       circleImageView=itemView.findViewById(R.id.noteImageData);
     }
 }

@@ -20,6 +20,7 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.squareup.picasso.Picasso;
 
 public class MainActivity extends AppCompatActivity {
     private FloatingActionButton floatingActionButton;
@@ -78,6 +79,7 @@ public class MainActivity extends AppCompatActivity {
                 holder.textViewMessage.setText(model.getMessage());
                 holder.textViewDate.setText(model.getDate());
                 holder.textViewTitle.setText(model.getTitle());
+                Picasso.get().load(model.getImage()).placeholder(R.drawable.book).into(holder.circleImageView);
                 holder.itemView.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {

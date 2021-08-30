@@ -5,17 +5,17 @@ public class Model {
     String message;
     String date;
     String title;
+    String image;
 
-    public Model() {
-    }
-
-    public Model( String message, String date, String title) {
-
+    public Model(String message, String date, String title, String image) {
         this.message = message;
         this.date = date;
         this.title = title;
+        this.image = image;
     }
 
+    public Model() {
+    }
 
     public String getMessage() {
         return message;
@@ -39,5 +39,13 @@ public class Model {
 
     public void setTitle(String title) {
         this.title = title;
+    }
+
+    public String getImage() {
+        return image;
+    }
+
+    public void setImage(String image) {
+        this.image = image;
     }
 }
