@@ -121,7 +121,7 @@ public class NoteAdd extends AppCompatActivity {
         Calendar calTime=Calendar.getInstance();
         SimpleDateFormat currentTime=new SimpleDateFormat("HH:mm");
         time=currentTime.format(calTime.getTime());
-        randomName=date+time+user;
+
         if (imageUrl==null){
             Toast.makeText(this, "please Select image", Toast.LENGTH_SHORT).show();
         }
@@ -171,6 +171,14 @@ public class NoteAdd extends AppCompatActivity {
         if (requestCode==galleryPick&&resultCode==RESULT_OK&&data!=null){
             imageUrl=data.getData();
             circleImageView.setImageURI(imageUrl);
+
+            Calendar claDate=Calendar.getInstance();
+            SimpleDateFormat simpleDateFormat=new SimpleDateFormat("dd-MMMM-yyyy");
+            date=simpleDateFormat.format(claDate.getTime());
+            Calendar calTime=Calendar.getInstance();
+            SimpleDateFormat currentTime=new SimpleDateFormat("HH:mm");
+            time=currentTime.format(calTime.getTime());
+            randomName=date+time+user;
             final StorageReference filepath=storageReference.child(randomName+ ".jpg");
             filepath.putFile(imageUrl).addOnSuccessListener( new OnSuccessListener<UploadTask.TaskSnapshot>() {
                 @Override
